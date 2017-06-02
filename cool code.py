@@ -50,7 +50,7 @@ steps = 0
 while True:        
     if accelerometer.get_x() >= 0 and accelerometer.get_y() >= 800 and accelerometer.get_z() >= 75:
         steps+=1
-        oled_add_text(0, 0, str(steps))
+        oled_add_text(0, 0, str(steps//6))
         
         
         
